@@ -28,7 +28,7 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="deconz" \
-    io.hass.description="deconz" \
+    io.hass.description="deCONZ REST plugin provides a REST API to access ZigBee" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \

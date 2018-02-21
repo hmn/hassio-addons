@@ -2,7 +2,7 @@
   "name": "deCONZ",
   "version": "2.05.05",
   "slug": "deconz",
-  "description": "deCONZ",
+  "description": "deCONZ REST plugin provides a REST API to access ZigBee",
   "startup": "services",
   "boot": "auto",
   "hassio_api": false,
