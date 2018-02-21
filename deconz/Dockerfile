@@ -6,9 +6,10 @@ RUN \
     apt-get update && apt-get -y --no-install-recommends install wget libqt5core5a libqt5network5 libqt5widgets5 libqt5gui5 libqt5serialport5 libqt5websockets5 libqt5sql5 libcap2-bin sqlite3
 
 RUN \
-    cd /tmp && wget http://www.dresden-elektronik.de/rpi/deconz/deconz-2.04.99-qt5.deb \
+    cd /tmp && wget http://www.dresden-elektronik.de/rpi/deconz-dev/deconz-dev-2.05.05.deb \
     \
-    && dpkg --ignore-depends wiringpi -i /tmp/deconz-2.04.99-qt5.deb
+    && dpkg --ignore-depends wiringpi -i /tmp/deconz-dev-2.05.05.deb
+RUN apt update && apt install -f
 RUN \
     rm -f -r \
         /tmp/* \
@@ -37,7 +38,7 @@ LABEL \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="David Kreitschmann <d@o7o.de>" \
-    org.label-schema.description="AirPlay capabilities for your Sonos (and UPnP) devices" \
+    org.label-schema.description="deCONZ REST plugin provides a REST API to access ZigBee" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="deconz" \
     org.label-schema.schema-version="1.0" \
