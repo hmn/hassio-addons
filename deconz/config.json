@@ -1,6 +1,6 @@
 {
   "name": "deCONZ",
-  "version": "2.05.05",
+  "version": "2.05.09",
   "slug": "deconz",
   "description": "deCONZ REST plugin provides a REST API to access ZigBee",
   "startup": "services",
@@ -14,8 +14,8 @@
     "config:rw"
   ],
   "options": {
-    "httpport": 8234,
-    "wsport": 8235,
+    "httpport": 8080,
+    "wsport": 8088,
     "conbee": true
   },
   "schema": {
@@ -24,7 +24,7 @@
     "conbee": "bool"
   },
   "ports": {
-    "8234/tcp": 8234,
-    "8235/tcp": 8235
+    "8234/tcp": 8080,
+    "8235/tcp": 8088
   }
 }
