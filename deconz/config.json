@@ -1,6 +1,6 @@
 {
   "name": "deCONZ",
-  "version": "2.05.15",
+  "version": "2.05.17",
   "slug": "deconz",
   "description": "deCONZ REST plugin provides a REST API to access ZigBee",
   "startup": "services",
