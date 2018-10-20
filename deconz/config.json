@@ -1,6 +1,6 @@
 {
   "name": "deCONZ",
-  "version": "2.05.40",
+  "version": "2.05.41",
   "slug": "deconz",
   "description": "deCONZ REST plugin provides a REST API to access ZigBee",
   "startup": "services",
@@ -8,7 +8,7 @@
   "hassio_api": false,
   "homeassistant_api": false,
   "host_network": true,
-  "webui": "http://[HOST]:[PORT:8234]/pwa/login.html#host/[HOST]:8234",
+  "webui": "http://[HOST]:[PORT:8234]/pwa/login.html#host/10.254.2.11:[HTTPPORT:8080]",
   "auto_uart":true,
   "map": [
     "config:rw"
